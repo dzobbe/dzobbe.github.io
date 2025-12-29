@@ -254,86 +254,152 @@ html(lang='en')
             section#skills.resume-section
                 .resume-section-content
                     h2.mb-5 Skills
-                    .subheading.mb-4 Blockchain & Smart Contracts
+                    
+                    // Core Expertise - Highlighted
+                    .row.g-4.mb-5
+                        .col-md-4
+                            .card-web3.h-100.text-center(style='border: 2px solid rgba(139, 92, 246, 0.4); background: rgba(139, 92, 246, 0.1);')
+                                i.fas.fa-shield-alt.fa-3x.mb-3(style='color: #8b5cf6;')
+                                h4.mb-3.gradient-text Trusted Execution Environments
+                                ul.fa-ul.text-start.mb-0
+                                    li.mb-2
+                                        span.fa-li
+                                            i.fas.fa-check(style='color: #8b5cf6;')
+                                        | Intel SGX
+                                    li.mb-2
+                                        span.fa-li
+                                            i.fas.fa-check(style='color: #8b5cf6;')
+                                        | AMD SEV
+                                    li.mb-2
+                                        span.fa-li
+                                            i.fas.fa-check(style='color: #8b5cf6;')
+                                        | Intel TDX
+                                    li.mb-2
+                                        span.fa-li
+                                            i.fas.fa-check(style='color: #8b5cf6;')
+                                        | TEE-as-a-Service
+                                    li.mb-2
+                                        span.fa-li
+                                            i.fas.fa-check(style='color: #8b5cf6;')
+                                        | Confidential Computing
+                        
+                        .col-md-4
+                            .card-web3.h-100.text-center(style='border: 2px solid rgba(6, 182, 212, 0.4); background: rgba(6, 182, 212, 0.1);')
+                                i.fas.fa-lock.fa-3x.mb-3(style='color: #06b6d4;')
+                                h4.mb-3.gradient-text Zero-Knowledge Proofs
+                                ul.fa-ul.text-start.mb-0
+                                    li.mb-2
+                                        span.fa-li
+                                            i.fas.fa-check(style='color: #06b6d4;')
+                                        | ZK-SNARKs
+                                    li.mb-2
+                                        span.fa-li
+                                            i.fas.fa-check(style='color: #06b6d4;')
+                                        | ZK-STARKs
+                                    li.mb-2
+                                        span.fa-li
+                                            i.fas.fa-check(style='color: #06b6d4;')
+                                        | Hybrid Proof Architectures
+                                    li.mb-2
+                                        span.fa-li
+                                            i.fas.fa-check(style='color: #06b6d4;')
+                                        | Verifiable Computation
+                                    li.mb-2
+                                        span.fa-li
+                                            i.fas.fa-check(style='color: #06b6d4;')
+                                        | Privacy-Preserving Protocols
+                        
+                        .col-md-4
+                            .card-web3.h-100.text-center(style='border: 2px solid rgba(59, 130, 246, 0.4); background: rgba(59, 130, 246, 0.1);')
+                                i.fab.fa-ethereum.fa-3x.mb-3(style='color: #3b82f6;')
+                                h4.mb-3.gradient-text Blockchain & Web3
+                                ul.fa-ul.text-start.mb-0
+                                    li.mb-2
+                                        span.fa-li
+                                            i.fas.fa-check(style='color: #3b82f6;')
+                                        | Smart Contracts (Solidity, Rust)
+                                    li.mb-2
+                                        span.fa-li
+                                            i.fas.fa-check(style='color: #3b82f6;')
+                                        | Layer 2 Solutions
+                                    li.mb-2
+                                        span.fa-li
+                                            i.fas.fa-check(style='color: #3b82f6;')
+                                        | DeFi Protocols
+                                    li.mb-2
+                                        span.fa-li
+                                            i.fas.fa-check(style='color: #3b82f6;')
+                                        | Consensus Mechanisms
+                                    li.mb-2
+                                        span.fa-li
+                                            i.fas.fa-check(style='color: #3b82f6;')
+                                        | EVM & Multi-chain
+                    
+                    .subheading.mb-4 Programming Languages & Frameworks
                     .row.g-3.mb-5
                         .col-md-6
                             ul.fa-ul.mb-0
                                 li.mb-2
                                     span.fa-li
                                         i.fas.fa-code(style='color: #8b5cf6;')
+                                    strong Rust
+                                    |  - Systems programming, Substrate, Solana
+                                li.mb-2
+                                    span.fa-li
+                                        i.fas.fa-code(style='color: #06b6d4;')
                                     strong Solidity
                                     |  - Smart contract development
                                 li.mb-2
                                     span.fa-li
-                                        i.fas.fa-code(style='color: #06b6d4;')
-                                    strong Rust
-                                    |  - Substrate, Solana programs
-                                li.mb-2
-                                    span.fa-li
                                         i.fas.fa-code(style='color: #3b82f6;')
-                                    strong Vyper
-                                    |  - Alternative smart contract language
+                                    strong Python
+                                    |  - Research, tooling, automation
                                 li.mb-2
                                     span.fa-li
-                                        i.fas.fa-shield-alt(style='color: #8b5cf6;')
-                                    strong Security Auditing
-                                    |  - Slither, Mythril, Foundry
+                                        i.fas.fa-code(style='color: #06b6d4;')
+                                    strong C/C++
+                                    |  - Low-level systems, performance
                         .col-md-6
                             ul.fa-ul.mb-0
                                 li.mb-2
                                     span.fa-li
-                                        i.fas.fa-link(style='color: #06b6d4;')
-                                    strong Web3.js / Ethers.js
-                                    |  - Frontend integration
-                                li.mb-2
-                                    span.fa-li
-                                        i.fas.fa-cube(style='color: #3b82f6;')
+                                        i.fas.fa-cube(style='color: #8b5cf6;')
                                     strong Hardhat / Foundry
-                                    |  - Development frameworks
+                                    |  - Smart contract frameworks
                                 li.mb-2
                                     span.fa-li
-                                        i.fas.fa-network-wired(style='color: #8b5cf6;')
-                                    strong Multi-chain
-                                    |  - EVM, L2s, Cosmos
+                                        i.fas.fa-link(style='color: #06b6d4;')
+                                    strong Web3 Libraries
+                                    |  - Web3.js, Ethers.js, viem
                                 li.mb-2
                                     span.fa-li
-                                        i.fas.fa-coins(style='color: #06b6d4;')
-                                    strong DeFi Protocols
-                                    |  - AMMs, Lending, Derivatives
-                    
-                    .subheading.mb-4 Frontend & Tools
-                    ul.list-inline.dev-icons.mb-4
-                        li.list-inline-item.mx-2.mb-3
-                            i.fab.fa-react.fa-3x(style='color: #06b6d4;')
-                        li.list-inline-item.mx-2.mb-3
-                            i.fab.fa-js-square.fa-3x(style='color: #f7df1e;')
-                        li.list-inline-item.mx-2.mb-3
-                            i.fab.fa-ethereum.fa-3x(style='color: #627eea;')
-                        li.list-inline-item.mx-2.mb-3
-                            i.fab.fa-node-js.fa-3x(style='color: #339933;')
-                        li.list-inline-item.mx-2.mb-3
-                            i.fab.fa-python.fa-3x(style='color: #3776ab;')
-                        li.list-inline-item.mx-2.mb-3
-                            i.fab.fa-git-alt.fa-3x(style='color: #f05032;')
+                                        i.fas.fa-shield-alt(style='color: #8b5cf6;')
+                                    strong Security Tools
+                                    |  - Slither, Mythril, formal verification
+                                li.mb-2
+                                    span.fa-li
+                                        i.fas.fa-database(style='color: #06b6d4;')
+                                    strong IPFS / Arweave
+                                    |  - Decentralized storage
                     
                     .subheading.mb-3 Development Practices
                     ul.fa-ul.mb-0
                         li
                             span.fa-li
                                 i.fas.fa-check(style='color: #06b6d4;')
-                            | Gas optimization & efficiency
+                            | Security-first development & threat modeling
                         li
                             span.fa-li
                                 i.fas.fa-check(style='color: #06b6d4;')
-                            | Security-first development
+                            | Test-driven development (TDD) & formal verification
                         li
                             span.fa-li
                                 i.fas.fa-check(style='color: #06b6d4;')
-                            | Test-driven development (TDD)
+                            | Performance optimization & benchmarking
                         li
                             span.fa-li
                                 i.fas.fa-check(style='color: #06b6d4;')
-                            | Decentralized architecture design
+                            | Research-to-production pipeline
 
             hr.m-0(style='border-color: rgba(139, 92, 246, 0.2);')
 
