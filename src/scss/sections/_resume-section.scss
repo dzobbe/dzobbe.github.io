@@ -1,5 +1,5 @@
 // 
-// Sections
+// Sections - Web3 Theme
 // 
 
 section.resume-section {
@@ -10,9 +10,26 @@ section.resume-section {
     padding-top: 5rem;
     padding-bottom: 5rem;
     max-width: 75rem;
+    position: relative;
+    
+    // Animated background gradient
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: radial-gradient(circle at 20% 50%, rgba(139, 92, 246, 0.05) 0%, transparent 50%),
+                    radial-gradient(circle at 80% 80%, rgba(6, 182, 212, 0.05) 0%, transparent 50%);
+        pointer-events: none;
+        z-index: 0;
+    }
 
     .resume-section-content {
         width: 100%;
+        position: relative;
+        z-index: 1;
     }
 }
 
@@ -28,5 +45,26 @@ section.resume-section {
         padding-right: 3rem;
         padding-top: 5rem;
         padding-bottom: 5rem;
+    }
+}
+
+// Badge styling
+.badge {
+    padding: 0.5rem 1rem;
+    font-weight: 500;
+    font-size: 0.875rem;
+    border-radius: 20px;
+}
+
+// Button styling
+.btn {
+    border-radius: 12px;
+    font-weight: 600;
+    padding: 0.75rem 2rem;
+    transition: all 0.3s ease;
+    
+    &:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 10px 25px rgba(139, 92, 246, 0.3);
     }
 }

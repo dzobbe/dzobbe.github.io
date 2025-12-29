@@ -8,16 +8,17 @@ html(lang='en')
         meta(name='description', content='')
         meta(name='author', content='')
 
-        title Resume - Start Bootstrap Theme
+        title Web3 Developer Portfolio
 
         link(rel='icon', type='image/x-icon', href='assets/img/favicon.ico')
 
         // Font Awesome icons (free version)
         script(src='https://use.fontawesome.com/releases/v6.3.0/js/all.js', crossorigin='anonymous')
 
-        // Google fonts
-        link(href='https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700', rel='stylesheet', type='text/css')
-        link(href='https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i', rel='stylesheet', type='text/css')
+        // Google fonts - Web3 Theme (matching web3.career style)
+        link(rel='preconnect', href='https://fonts.googleapis.com')
+        link(rel='preconnect', href='https://fonts.gstatic.com', crossorigin)
+        link(href='https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Inter:wght@300;400;500;600;700&display=swap', rel='stylesheet')
 
         // Core theme CSS (includes Bootstrap)
         link(href='css/styles.css', rel='stylesheet')
@@ -25,11 +26,11 @@ html(lang='en')
     body#page-top
 
         // Navigation
-        nav#sideNav.navbar.navbar-expand-lg.navbar-dark.bg-primary.fixed-top
+        nav#sideNav.navbar.navbar-expand-lg.navbar-dark.fixed-top
             a.navbar-brand.js-scroll-trigger(href='#page-top')
-                span.d-block.d-lg-none Clarence Taylor
+                span.d-block.d-lg-none Giovanni Mazzeo
                 span.d-none.d-lg-block
-                    img.img-fluid.img-profile.rounded-circle.mx-auto.mb-2(src='assets/img/profile.jpg', alt='...')
+                    img.img-fluid.img-profile.rounded-circle.mx-auto.mb-2(src='assets/img/profile.jpg', alt='Profile')
             button.navbar-toggler(type='button', data-bs-toggle='collapse', data-bs-target='#navbarResponsive', aria-controls='navbarResponsive', aria-expanded='false', aria-label='Toggle navigation')
                 span.navbar-toggler-icon
             #navbarResponsive.collapse.navbar-collapse
@@ -37,15 +38,15 @@ html(lang='en')
                     li.nav-item
                         a.nav-link.js-scroll-trigger(href='#about') About
                     li.nav-item
-                        a.nav-link.js-scroll-trigger(href='#experience') Experience
+                        a.nav-link.js-scroll-trigger(href='#publications') Publications
                     li.nav-item
-                        a.nav-link.js-scroll-trigger(href='#education') Education
+                        a.nav-link.js-scroll-trigger(href='#talks') Talks
                     li.nav-item
                         a.nav-link.js-scroll-trigger(href='#skills') Skills
                     li.nav-item
-                        a.nav-link.js-scroll-trigger(href='#interests') Interests
+                        a.nav-link.js-scroll-trigger(href='#software') Software
                     li.nav-item
-                        a.nav-link.js-scroll-trigger(href='#awards') Awards
+                        a.nav-link.js-scroll-trigger(href='#contact') Contact
 
         // Page Content
         .container-fluid.p-0
@@ -54,197 +55,365 @@ html(lang='en')
             section#about.resume-section
                 .resume-section-content
                     h1.mb-0
-                        | Clarence 
-                        span.text-primary Taylor
-                    .subheading.mb-5
-                        | 3542 Berry Street · Cheyenne Wells, CO 80810 · (317) 585-8468 · 
-                        a(href='mailto:name@email.com') name@email.com
-                    p.lead.mb-5
-                        | I am experienced in leveraging agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition.
-                    .social-icons
-                        a.social-icon(href='#!')
-                            i.fab.fa-linkedin-in
-                        a.social-icon(href='#!')
+                        | Giovanni 
+                        span.gradient-text Mazzeo
+                    .subheading.mb-4 Web3 Entrepreneur · Senior Software Engineer · Associate Professor
+                    p.lead.mb-4
+                        | I am a Web3 entrepreneur, senior software engineer, and Associate Professor of Computer Security, working at the intersection of blockchain protocols, confidential computing, and trusted execution environments.
+                    p.mb-4
+                        | I am currently CIO at Trillion.xyz, a company building a decentralized exchange with trust and verification properties while, at the same time, ensuring high-performance execution. My role at Trillion is to lead and conduct applied research that directly supports the design of cutting-edge security solutions. The core research is focused in combining zero-knowledge proofs with trusted execution environments, thus enabling hybrid proof architectures that balance efficiency and verifiability in layer-2 systems.
+                    p.mb-4
+                        | Previously, at Credora (formerly X-Margin), I led the design and development of a decentralized application enabling community-based DeFi asset risk scoring. The platform allowed distributed contributors to provide and validate risk signals, which were aggregated through cryptographically verifiable attestations to produce transparent, on-chain risk metrics for DeFi protocols. This work supported Credora's growth phase and fundraising by delivering a novel, decentralized approach to credit and risk assessment in DeFi.
+                    p.mb-4
+                        | I hold a PhD in Information Technology, with research focused on trustworthy cloud provisioning and data-in-use protection using emerging CPU security extensions. Alongside my entrepreneurial activities, I am an Associate Professor and Researcher of Computer Security at the University of Naples Parthenope, where I conduct research on confidential computing and blockchain. I have authored over 60 peer-reviewed publications and have served as principal investigator or technical lead in multiple EU-funded Horizon projects.
+                    p.mb-5
+                        | My work focuses on turning cutting-edge security research into real-world, production-grade Web3 infrastructure.
+                    .social-icons.mb-4
+                        a.social-icon(href='https://github.com/dzobbe', target='_blank', rel='noopener noreferrer')
                             i.fab.fa-github
-                        a.social-icon(href='#!')
+                        a.social-icon(href='https://twitter.com/dzobbe', target='_blank', rel='noopener noreferrer')
                             i.fab.fa-twitter
-                        a.social-icon(href='#!')
-                            i.fab.fa-facebook-f
+                        a.social-icon(href='https://www.linkedin.com/in/giovanni-mazzeo-1b03622a/', target='_blank', rel='noopener noreferrer')
+                            i.fab.fa-linkedin-in
+                        a.social-icon(href='https://scholar.google.com/citations?user=V6eVjpEAAAAJ&hl=it', target='_blank', rel='noopener noreferrer')
+                            i.fab.fa-google-scholar
+                    .mt-4
+                        a.btn.btn-lg.glow-effect(href='#contact', style='background: linear-gradient(135deg, #8b5cf6 0%, #06b6d4 100%); border: none; color: white;')
+                            | Get In Touch
 
-            hr.m-0
+            hr.m-0(style='border-color: rgba(139, 92, 246, 0.2);')
 
-            // Experience
-            section#experience.resume-section
-               .resume-section-content
-                    h2.mb-5 Experience
-
-                    .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
-                        .flex-grow-1
-                            h3.mb-0 Senior Web Developer
-                            .subheading.mb-3 Intelitec Solutions
-                            p
-                                | Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.
-                        .flex-shrink-0
-                            span.text-primary March 2013 - Present
-
-                    .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
-                        .flex-grow-1
-                            h3.mb-0 Web Developer
-                            .subheading.mb-3 Intelitec Solutions
-                            p
-                                | Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.
-                        .flex-shrink-0
-                            span.text-primary December 2011 - March 2013
-
-                    .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
-                        .flex-grow-1
-                            h3.mb-0 Junior Web Designer
-                            .subheading.mb-3 Shout! Media Productions
-                            p
-                                | Podcasting operational change management inside of workflows to establish a framework. Taking seamless key performance indicators offline to maximise the long tail. Keeping your eye on the ball while performing a deep dive on the start-up mentality to derive convergence on cross-platform integration.
-                        .flex-shrink-0
-                            span.text-primary July 2010 - December 2011
-
-                    .d-flex.flex-column.flex-md-row.justify-content-between
-                        .flex-grow-1
-                            h3.mb-0 Web Design Intern
-                            .subheading.mb-3 Shout! Media Productions
-                            p
-                                | Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI.
-                        .flex-shrink-0
-                            span.text-primary September 2008 - June 2010
-
-            hr.m-0
-
-            // Education
-            section#education.resume-section
+            // Publications
+            section#publications.resume-section
                 .resume-section-content
-                    h2.mb-5 Education
+                    h2.mb-5 Featured Publications
+                    
+                    .publication-list
+                        .card-web3.mb-4
+                            h4.mb-2.gradient-text Proof of Trusted Execution: A Consensus Paradigm for Deterministic Blockchain Finality
+                            p.mb-2.text-secondary
+                                | Habib, K.; Kapitsyn, V.; Mazzeo, G.; Mehrban, F.
+                            p.mb-0
+                                span.badge.me-2(style='background: rgba(139, 92, 246, 0.2); color: #8b5cf6;') 2025
+                                span.text-muted arXiv preprint. Under review at Middleware 2026 conference.
+                        
+                        .card-web3.mb-4
+                            h4.mb-2.gradient-text Enhancing the Security of Rollup Sequencers using Decentrally Attested TEEs
+                            p.mb-2.text-secondary
+                                | Cristiano, G. M.; D'Antonio, S.; Giglio, J.; Mazzeo, G.; Romano, L.
+                            p.mb-0
+                                span.badge.me-2(style='background: rgba(139, 92, 246, 0.2); color: #8b5cf6;') 2025
+                                span.text-muted arXiv preprint. Under review at IEEE Transactions on Emerging Topics in Computing.
+                        
+                        .card-web3.mb-4
+                            h4.mb-2.gradient-text A Blockchain Solution for Decentralized Content Verification and its Application to Deepfake Detection and Fintech Credit Scoring
+                            p.mb-2.text-secondary
+                                | Coppolino, L.; Cristiano, G. M.; D'Antonio, S.; Giglio, J.; Mazzeo, G.; Romano, L.
+                            p.mb-0
+                                span.badge.me-2(style='background: rgba(139, 92, 246, 0.2); color: #8b5cf6;') 2025
+                                span.text-muted Blockchain: Research and Applications.
+                        
+                        .card-web3.mb-4
+                            h4.mb-2.gradient-text An Experimental Evaluation of TEE Technology: Benchmarking Transparent Approaches Based on SGX, SEV, and TDX
+                            p.mb-2.text-secondary
+                                | Coppolino, L.; D'Antonio, S.; Mazzeo, G.; Romano, L.
+                            p.mb-0
+                                span.badge.me-2(style='background: rgba(139, 92, 246, 0.2); color: #8b5cf6;') 2025
+                                span.text-muted Computers & Security.
+                        
+                        .card-web3.mb-4
+                            h4.mb-2.gradient-text WASMBOX: A Lightweight WASM-based Runtime for Trustworthy Multi-Tenant Embedded Systems
+                            p.mb-2.text-secondary
+                                | Coppolino, L.; D'Antonio, S.; Mazzeo, G.; Nardone, R.; Romano, L.; Schmitt, M.
+                            p.mb-0
+                                span.badge.me-2(style='background: rgba(139, 92, 246, 0.2); color: #8b5cf6;') 2024
+                                span.text-muted IEEE Transactions on Emerging Topics in Computing.
+                        
+                        .card-web3.mb-4
+                            h4.mb-2.gradient-text A Comprehensive Trusted Runtime for WebAssembly with Intel SGX
+                            p.mb-2.text-secondary
+                                | Ménétrey, J.; Pasin, M.; Felber, P.; Schiavoni, V.; Mazzeo, G.; Hollum, A.; Vaydia, D.
+                            p.mb-0
+                                span.badge.me-2(style='background: rgba(139, 92, 246, 0.2); color: #8b5cf6;') 2023
+                                span.text-muted IEEE Transactions on Dependable and Secure Computing.
+                        
+                        .card-web3.mb-4
+                            h4.mb-2.gradient-text The Alliance of HE and TEE to Enhance their Performance and Security
+                            p.mb-2.text-secondary
+                                | D'Antonio, S.; Lazarou, G.; Mazzeo, G.; Stan, O.; Zuber, M.; Tsavdaridis, I.
+                            p.mb-0
+                                span.badge.me-2(style='background: rgba(139, 92, 246, 0.2); color: #8b5cf6;') 2023
+                                span.text-muted IEEE International Conference on Cyber Security and Resilience (CSR).
+                        
+                        .card-web3.mb-4
+                            h4.mb-2.gradient-text Enabling Trusted TEE-as-a-Service Models with Privacy-Preserving Automatons
+                            p.mb-2.text-secondary
+                                | Subramanyan, B.; Hollum, A.; Mazzeo, G.; Ficke, M.; Vaydia, D.
+                            p.mb-0
+                                span.badge.me-2(style='background: rgba(139, 92, 246, 0.2); color: #8b5cf6;') 2023
+                                span.text-muted IEEE CloudCom.
+                        
+                        .card-web3.mb-4
+                            h4.mb-2.gradient-text SGXTuner: Performance Enhancement of Intel SGX Applications via Stochastic Optimization
+                            p.mb-2.text-secondary
+                                | Mazzeo, G.; Arnautov, S.; Fetzer, C.; Romano, L.
+                            p.mb-0
+                                span.badge.me-2(style='background: rgba(139, 92, 246, 0.2); color: #8b5cf6;') 2021
+                                span.text-muted IEEE Transactions on Dependable and Secure Computing.
+                        
+                        .card-web3.mb-4
+                            h4.mb-2.gradient-text Facing the Blockchain Endpoint Vulnerability: an SGX-based Solution for Secure eHealth Auditing
+                            p.mb-2.text-secondary
+                                | Coppolino, L.; D'Antonio, S.; Mazzeo, G.; Romano, L.; Campegiani, P.
+                            p.mb-0
+                                span.badge.me-2(style='background: rgba(139, 92, 246, 0.2); color: #8b5cf6;') 2021
+                                span.text-muted ITASEC.
+                        
+                        .card-web3.mb-4
+                            h4.mb-2.gradient-text VISE: Combining Intel SGX and Homomorphic Encryption for Cloud Industrial Control Systems
+                            p.mb-2.text-secondary
+                                | Coppolino, L.; D'Antonio, S.; Formicola, V.; Mazzeo, G.; Romano, L.
+                            p.mb-0
+                                span.badge.me-2(style='background: rgba(139, 92, 246, 0.2); color: #8b5cf6;') 2020
+                                span.text-muted IEEE Transactions on Computers.
+                        
+                        .card-web3.mb-4
+                            h4.mb-2.gradient-text A Comparative Analysis of Emerging Approaches for Securing Java Software with Intel SGX
+                            p.mb-2.text-secondary
+                                | Coppolino, L.; D'Antonio, S.; Mazzeo, G.; Romano, L.
+                            p.mb-0
+                                span.badge.me-2(style='background: rgba(139, 92, 246, 0.2); color: #8b5cf6;') 2019
+                                span.text-muted Future Generation Computer Systems.
+                        
+                        .card-web3.mb-4
+                            h4.mb-2.gradient-text Hardening ROS via Hardware-Assisted Trusted Execution Environment
+                            p.mb-2.text-secondary
+                                | Staffa, M.; Mazzeo, G.; Sgaglione, L.
+                            p.mb-0
+                                span.badge.me-2(style='background: rgba(139, 92, 246, 0.2); color: #8b5cf6;') 2018
+                                span.text-muted IEEE RO-MAN.
+                        
+                        .card-web3.mb-4
+                            h4.mb-2.gradient-text Exploiting New CPU Extensions for Secure Exchange of eHealth Data at the EU Level
+                            p.mb-2.text-secondary
+                                | Coppolino, L.; D'Antonio, S.; Mazzeo, G.; Romano, L.; Sgaglione, L.
+                            p.mb-0
+                                span.badge.me-2(style='background: rgba(139, 92, 246, 0.2); color: #8b5cf6;') 2018
+                                span.text-muted IEEE EDCC.
+                        
+                        .card-web3.mb-4
+                            h4.mb-2.gradient-text Secure Cloud Microservices Using Intel SGX
+                            p.mb-2.text-secondary
+                                | Brenner, S.; Hundt, T.; Mazzeo, G.; Kapitza, R.
+                            p.mb-0
+                                span.badge.me-2(style='background: rgba(139, 92, 246, 0.2); color: #8b5cf6;') 2017
+                                span.text-muted IFIP International Conference on Distributed Applications and Interoperable Systems (DAIS).
 
-                    .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
-                        .flex-grow-1
-                            h3.mb-0 University of Colorado Boulder
-                            .subheading.mb-3 Bachelor of Science
-                            div Computer Science - Web Development Track
-                            p GPA: 3.23
-                        .flex-shrink-0
-                            span.text-primary August 2006 - May 2010
+            hr.m-0(style='border-color: rgba(139, 92, 246, 0.2);')
 
-                    .d-flex.flex-column.flex-md-row.justify-content-between
-                        .flex-grow-1
-                            h3.mb-0 James Buchanan High School
-                            .subheading.mb-3 Technology Magnet Program
-                            p GPA: 3.56
-                        .flex-shrink-0
-                            span.text-primary August 2002 - May 2006
+            // Talks
+            section#talks.resume-section
+               .resume-section-content
+                    h2.mb-5 Talks & Presentations
+                    
+                    .talk-list
+                        .card-web3.mb-4
+                            h4.mb-2.gradient-text TEEs in Web3: Powering Rollups, Consensus, and Real-World Exchange Infrastructure
+                            p.mb-0
+                                span.badge.me-2(style='background: rgba(139, 92, 246, 0.2); color: #8b5cf6;') 2026
+                                span.text-muted Open Confidential Computing Conference 2026
+                        
+                        .card-web3.mb-4
+                            h4.mb-2.gradient-text Trusted Execution Environments: Shielding data-in-use from the Edge to the Cloud
+                            p.mb-0
+                                span.badge.me-2(style='background: rgba(139, 92, 246, 0.2); color: #8b5cf6;') 2025
+                                span.text-muted 10th Italian Workshop on Embedded Systems
+                        
+                        .card-web3.mb-4
+                            h4.mb-2.gradient-text An Experimental Evaluation of TEE technology Evolution: Benchmarking Transparent Approaches based on SGX, SEV, and TDX
+                            p.mb-0
+                                span.badge.me-2(style='background: rgba(139, 92, 246, 0.2); color: #8b5cf6;') 2024
+                                span.text-muted Confidential Computing Summit 2024
+                        
+                        .card-web3.mb-4
+                            h4.mb-2.gradient-text Awesome Trusted Execution Environment
+                            p.mb-0
+                                span.badge.me-2(style='background: rgba(139, 92, 246, 0.2); color: #8b5cf6;') 2023
+                                span.text-muted Tutorial at IEEE/IFIP DSN 2023 conference
+                        
+                        .card-web3.mb-4
+                            h4.mb-2.gradient-text The road to Verifiable TEE-as-a-service models, where we are and where we are headed
+                            p.mb-0
+                                span.badge.me-2(style='background: rgba(139, 92, 246, 0.2); color: #8b5cf6;') 2023
+                                span.text-muted "New Software Abstractions For Hardware Security Technology", 2023
 
-            hr.m-0
+            hr.m-0(style='border-color: rgba(139, 92, 246, 0.2);')
 
             // Skills
             section#skills.resume-section
                 .resume-section-content
                     h2.mb-5 Skills
-                    .subheading.mb-3 Programming Languages & Tools
-                    ul.list-inline.dev-icons
-                        li.list-inline-item
-                            i.fab.fa-html5
-                        li.list-inline-item
-                            i.fab.fa-css3-alt
-                        li.list-inline-item
-                            i.fab.fa-js-square
-                        li.list-inline-item
-                            i.fab.fa-angular
-                        li.list-inline-item
-                            i.fab.fa-react
-                        li.list-inline-item
-                            i.fab.fa-node-js
-                        li.list-inline-item
-                            i.fab.fa-sass
-                        li.list-inline-item
-                            i.fab.fa-less
-                        li.list-inline-item
-                            i.fab.fa-wordpress
-                        li.list-inline-item
-                            i.fab.fa-gulp
-                        li.list-inline-item
-                            i.fab.fa-grunt
-                        li.list-inline-item
-                            i.fab.fa-npm
-                    .subheading.mb-3 Workflow
+                    .subheading.mb-4 Blockchain & Smart Contracts
+                    .row.g-3.mb-5
+                        .col-md-6
+                            ul.fa-ul.mb-0
+                                li.mb-2
+                                    span.fa-li
+                                        i.fas.fa-code(style='color: #8b5cf6;')
+                                    strong Solidity
+                                    |  - Smart contract development
+                                li.mb-2
+                                    span.fa-li
+                                        i.fas.fa-code(style='color: #06b6d4;')
+                                    strong Rust
+                                    |  - Substrate, Solana programs
+                                li.mb-2
+                                    span.fa-li
+                                        i.fas.fa-code(style='color: #3b82f6;')
+                                    strong Vyper
+                                    |  - Alternative smart contract language
+                                li.mb-2
+                                    span.fa-li
+                                        i.fas.fa-shield-alt(style='color: #8b5cf6;')
+                                    strong Security Auditing
+                                    |  - Slither, Mythril, Foundry
+                        .col-md-6
+                            ul.fa-ul.mb-0
+                                li.mb-2
+                                    span.fa-li
+                                        i.fas.fa-link(style='color: #06b6d4;')
+                                    strong Web3.js / Ethers.js
+                                    |  - Frontend integration
+                                li.mb-2
+                                    span.fa-li
+                                        i.fas.fa-cube(style='color: #3b82f6;')
+                                    strong Hardhat / Foundry
+                                    |  - Development frameworks
+                                li.mb-2
+                                    span.fa-li
+                                        i.fas.fa-network-wired(style='color: #8b5cf6;')
+                                    strong Multi-chain
+                                    |  - EVM, L2s, Cosmos
+                                li.mb-2
+                                    span.fa-li
+                                        i.fas.fa-coins(style='color: #06b6d4;')
+                                    strong DeFi Protocols
+                                    |  - AMMs, Lending, Derivatives
+                    
+                    .subheading.mb-4 Frontend & Tools
+                    ul.list-inline.dev-icons.mb-4
+                        li.list-inline-item.mx-2.mb-3
+                            i.fab.fa-react.fa-3x(style='color: #06b6d4;')
+                        li.list-inline-item.mx-2.mb-3
+                            i.fab.fa-js-square.fa-3x(style='color: #f7df1e;')
+                        li.list-inline-item.mx-2.mb-3
+                            i.fab.fa-ethereum.fa-3x(style='color: #627eea;')
+                        li.list-inline-item.mx-2.mb-3
+                            i.fab.fa-node-js.fa-3x(style='color: #339933;')
+                        li.list-inline-item.mx-2.mb-3
+                            i.fab.fa-python.fa-3x(style='color: #3776ab;')
+                        li.list-inline-item.mx-2.mb-3
+                            i.fab.fa-git-alt.fa-3x(style='color: #f05032;')
+                    
+                    .subheading.mb-3 Development Practices
                     ul.fa-ul.mb-0
                         li
                             span.fa-li
-                                i.fas.fa-check
-                            | Mobile-First, Responsive Design
+                                i.fas.fa-check(style='color: #06b6d4;')
+                            | Gas optimization & efficiency
                         li
                             span.fa-li
-                                i.fas.fa-check
-                            | Cross Browser Testing & Debugging
+                                i.fas.fa-check(style='color: #06b6d4;')
+                            | Security-first development
                         li
                             span.fa-li
-                                i.fas.fa-check
-                            | Cross Functional Teams
+                                i.fas.fa-check(style='color: #06b6d4;')
+                            | Test-driven development (TDD)
                         li
                             span.fa-li
-                                i.fas.fa-check
-                            | Agile Development & Scrum
+                                i.fas.fa-check(style='color: #06b6d4;')
+                            | Decentralized architecture design
 
-            hr.m-0
+            hr.m-0(style='border-color: rgba(139, 92, 246, 0.2);')
 
-            // Interests
-            section#interests.resume-section
+            // Software
+            section#software.resume-section
                 .resume-section-content
-                    h2.mb-5 Interests
-                    p
-                        | Apart from being a web developer, I enjoy most of my time being outdoors. In the winter, I am an avid skier and novice ice climber. During the warmer months here in Colorado, I enjoy mountain biking, free climbing, and kayaking.
-                    p.mb-0
-                        | When forced indoors, I follow a number of sci-fi and fantasy genre movies and television shows, I am an aspiring chef, and I spend a large amount of my free time exploring the latest technology advancements in the front-end web development world.
+                    h2.mb-5 Software
+                    .row.g-4
+                        .col-md-6
+                            .card-web3.h-100
+                                h4.mb-3.gradient-text PoTE-Lighthouse
+                                p.text-secondary.mb-3
+                                    | Patched lighthouse EVM client with Proof of Trusted Execution consensus
+                                a.btn.btn-sm(href='https://github.com/trillion-xyz/PoTE-lighthouse', target='_blank', rel='noopener noreferrer', style='background: rgba(139, 92, 246, 0.2); color: #8b5cf6; border: 1px solid rgba(139, 92, 246, 0.4); text-decoration: none;')
+                                    i.fab.fa-github.me-2
+                                    | View on GitHub
+                        
+                        .col-md-6
+                            .card-web3.h-100
+                                h4.mb-3.gradient-text ERC-20 Token Balance Tracker
+                                p.text-secondary.mb-3
+                                    | Track and monitor ERC-20 token balances across multiple addresses
+                                a.btn.btn-sm(href='https://github.com/dzobbe/erc20-token-balance-tracker', target='_blank', rel='noopener noreferrer', style='background: rgba(139, 92, 246, 0.2); color: #8b5cf6; border: 1px solid rgba(139, 92, 246, 0.4); text-decoration: none;')
+                                    i.fab.fa-github.me-2
+                                    | View on GitHub
+                        
+                        .col-md-6
+                            .card-web3.h-100
+                                h4.mb-3.gradient-text BAM (Block Assembly Marketplace)
+                                p.text-secondary.mb-3
+                                    | Smart routing for block assembly marketplace
+                                a.btn.btn-sm(href='https://github.com/dzobbe/BAM-routing-client', target='_blank', rel='noopener noreferrer', style='background: rgba(139, 92, 246, 0.2); color: #8b5cf6; border: 1px solid rgba(139, 92, 246, 0.4); text-decoration: none;')
+                                    i.fab.fa-github.me-2
+                                    | View on GitHub
+                        
+                        .col-md-6
+                            .card-web3.h-100
+                                h4.mb-3.gradient-text SGX Tuner
+                                p.text-secondary.mb-3
+                                    | A tool for optimizing performance of Intel SGX runtimes
+                                a.btn.btn-sm(href='https://github.com/dzobbe/sgxtuner', target='_blank', rel='noopener noreferrer', style='background: rgba(139, 92, 246, 0.2); color: #8b5cf6; border: 1px solid rgba(139, 92, 246, 0.4); text-decoration: none;')
+                                    i.fab.fa-github.me-2
+                                    | View on GitHub
+                    
+                    .mt-4
+                        p.text-muted.text-center.mb-0
+                            | And many other private repositories
 
-            hr.m-0
+            hr.m-0(style='border-color: rgba(139, 92, 246, 0.2);')
 
-            // Awards
-            section#awards.resume-section
+            // Contact
+            section#contact.resume-section
                 .resume-section-content
-                    h2.mb-5 Awards & Certifications
-                    ul.fa-ul.mb-0
-                        li
-                            span.fa-li
-                                i.fas.fa-trophy.text-warning
-                            | Google Analytics Certified Developer
-                        li
-                            span.fa-li
-                                i.fas.fa-trophy.text-warning
-                            | Mobile Web Specialist - Google Certification
-                        li
-                            span.fa-li
-                                i.fas.fa-trophy.text-warning
-                            | 1
-                            sup st 
-                            | Place - University of Colorado Boulder - Emerging Tech Competition 2009
-                        li
-                            span.fa-li
-                                i.fas.fa-trophy.text-warning
-                            | 1
-                            sup st 
-                            | Place - University of Colorado Boulder - Adobe Creative Jam 2008 (UI Design Category)
-                        li
-                            span.fa-li
-                                i.fas.fa-trophy.text-warning
-                            | 2
-                            sup nd 
-                            | Place - University of Colorado Boulder - Emerging Tech Competition 2008
-                        li
-                            span.fa-li
-                                i.fas.fa-trophy.text-warning
-                            | 1
-                            sup st 
-                            | Place - James Buchanan High School - Hackathon 2006
-                        li
-                            span.fa-li
-                                i.fas.fa-trophy.text-warning
-                            | 3
-                            sup rd 
-                            | Place - James Buchanan High School - Hackathon 2005
+                    h2.mb-5 Get In Touch
+                    p.lead.mb-4
+                        | Interested in collaborating on a Web3 project? Let's build the decentralized future together.
+                    .row
+                        .col-md-6.mb-4
+                            .card-web3
+                                h5.mb-3
+                                    i.fas.fa-envelope.me-2(style='color: #8b5cf6;')
+                                    | Email
+                                p.mb-0
+                                    a(style='color: #06b6d4; text-decoration: none;') giovanni (dot) mazzeo (at) uniparthenope (dot) it
+                        .col-md-6.mb-4
+                            .card-web3
+                                h5.mb-3
+                                    i.fab.fa-github.me-2(style='color: #8b5cf6;')
+                                    | GitHub
+                                p.mb-0
+                                    a(href='https://github.com/dzobbe', target='_blank', rel='noopener noreferrer', style='color: #06b6d4; text-decoration: none;') github.com/dzobbe
+                    .mt-4
+                        .social-icons
+                            a.social-icon(href='https://github.com/dzobbe', target='_blank', rel='noopener noreferrer')
+                                i.fab.fa-github
+                            a.social-icon(href='https://twitter.com/dzobbe', target='_blank', rel='noopener noreferrer')
+                                i.fab.fa-twitter
+                            a.social-icon(href='https://www.linkedin.com/in/giovanni-mazzeo-1b03622a/', target='_blank', rel='noopener noreferrer')
+                                i.fab.fa-linkedin-in
+                            a.social-icon(href='https://scholar.google.com/citations?user=V6eVjpEAAAAJ&hl=it', target='_blank', rel='noopener noreferrer')
+                                i.fab.fa-google-scholar
 
         // Bootstrap core JS
         script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js')

@@ -1,21 +1,18 @@
 // 
-// Variables
+// Typography - Web3 Theme (matching web3.career style)
 // 
 
-// Override Bootstrap typography variables
-
-$font-family-base: "Muli", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+// Modern Web3 Fonts - Space Mono for headings (like web3.career)
+$font-family-base: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
     "Segoe UI Symbol", "Noto Color Emoji";
 
-$headings-font-family: "Saira Extra Condensed", -apple-system,
-    BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+$headings-font-family: "Space Mono", "Courier New", monospace;
 
 $headings-font-weight: 700;
 
-$headings-color: $gray-800;
+$headings-color: $text-primary;
 
-$h1-font-size: 6rem;
-$h2-font-size: 3.5rem;
-$h3-font-size: 2rem;
+$h1-font-size: 5rem;
+$h2-font-size: 3rem;
+$h3-font-size: 1.75rem;
