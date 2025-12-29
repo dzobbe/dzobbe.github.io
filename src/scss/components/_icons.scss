@@ -39,6 +39,13 @@
             position: relative;
             z-index: 1;
         }
+        
+        svg {
+            position: relative;
+            z-index: 1;
+            width: 1.5rem;
+            height: 1.5rem;
+        }
 
         &:last-child {
             margin-right: 0;

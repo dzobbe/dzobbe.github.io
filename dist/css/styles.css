@@ -11091,6 +11091,12 @@ p.lead {
   position: relative;
   z-index: 1;
 }
+.social-icons .social-icon svg {
+  position: relative;
+  z-index: 1;
+  width: 1.5rem;
+  height: 1.5rem;
+}
 .social-icons .social-icon:last-child {
   margin-right: 0;
 }
